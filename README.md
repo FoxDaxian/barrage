@@ -1,5 +1,6 @@
 # vue2-barrage  
 vue2的发送弹幕插件  
+
 用法：  
 ```js
     mounted(){
