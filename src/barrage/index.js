@@ -1,8 +1,8 @@
 var animation = require("./animate.js");
+require('./barrage.scss')
 export default {
 	install(Vue,options){
 		Vue.prototype.$start = (barrage_target, section) => {
-			require.ensure([], (require) => {require('./barrage.scss')});
 			barrage_target.style.overflow = "hidden";
 			barrage_target.style.position = "relative";
 			return this.send.bind(this,barrage_target,section);
