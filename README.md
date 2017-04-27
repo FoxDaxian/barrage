@@ -4,6 +4,7 @@
 	<img src="https://img.shields.io/npm/v/vue2-barrage.svg" alt="">
 	<img src="https://img.shields.io/npm/l/vue2-barrage.svg" alt="">
 </p>
+
 # 用法：
 ```js
 //首先下载安装
