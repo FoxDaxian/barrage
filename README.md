@@ -50,7 +50,8 @@ ___
 
 
 # 其他
-[弹幕小例子](http://rbblog.space/)
+
+<a href="https://a13821190779.github.io/barrage/" target="_blank">弹幕小例子</a>
 
 [我的博客](http://rbblog.space/)
 
