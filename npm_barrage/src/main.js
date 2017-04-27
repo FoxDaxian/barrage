@@ -1,5 +1,5 @@
-var animation = require("./lib/animate.js");
-require('./lib/barrage.scss')
+var animation = require("./animate.js");
+require('./barrage.css')
 module.exports = {
 	install(Vue,options){
 		Vue.prototype.$start = (barrage_target, section) => {
@@ -30,7 +30,6 @@ module.exports = {
 		}else{
 			barrage.style.top = Math.random() * (target.offsetHeight - barrage.offsetHeight) + "px";
 		}
-
 
 		animation(barrage, "left", target.offsetWidth + barrage.offsetWidth, speed, function() {
 			barrage.parentNode.removeChild(barrage);
