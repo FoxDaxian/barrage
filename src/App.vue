@@ -1,11 +1,15 @@
 <style scoped lang="scss">
 	.wrap{
+		text-align: center;
 		.barrage_wrap{
 			height: 500px;
 			border:1px solid red;
 			width: 1000px;
 			margin:0 auto;
 		}	
+		input{
+			margin-top: 50px;
+		}
 	}
 </style>
 
@@ -38,7 +42,7 @@
 					text:this.text,
 					color:"#fff",
 					speed:4,
-					classname:"style2"
+					classname:"style3"
 				});
 			}
 		},
