@@ -1,6 +1,6 @@
 {
   "name": "vue2-barrage",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "local barrage",
   "main": "index.js",
   "scripts": {
