@@ -8,7 +8,7 @@
 # 用法：
 ```js
 //首先下载安装
-npm install vue2-barrge --save
+npm install vue2-barrage --save
 //然后在引入到你的vue中
 import barrage from "vue2-barrage";
 //Vue调用
