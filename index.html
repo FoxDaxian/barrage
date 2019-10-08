@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <style>
+            .wrap {
+                height: 500px;
+                width: 80vw;
+                border: 1px solid #000;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app"></div>
+
+        <script src="https://unpkg.com/vue2-barrage@1.0.8/lib/index.js"></script>
+        <script src="https://unpkg.com/vue@2.6.10/dist/vue.runtime.min.js"></script>
+        <script>
+            const barrage = window['vue2-barrage'];
+            Vue.use(barrage);
+
+            const app = new Vue({
+                el: '#app',
+                render: function(h) {
+                    return h(
+                        'div',
+                        {
+                            attrs: {
+                                id: 'app'
+                            }
+                        },
+                        [
+                            h('div', {
+                                class: 'wrap'
+                            }),
+                            h('input', {
+                                class: 'input',
+                                attrs: {
+                                    type: 'text'
+                                }
+                            }),
+                            h(
+                                'button',
+                                {
+                                    on: {
+                                        click: function() {
+                                            const input = document.querySelector(
+                                                '.input'
+                                            );
+                                            send({
+                                                text: input.value
+                                            });
+                                            input.value = '';
+                                            input.focus();
+                                        }
+                                    }
+                                },
+                                '发送'
+                            )
+                        ]
+                    );
+                }
+            });
+            const send = app.$start(document.querySelector('.wrap'), [0, 0.5]);
+        </script>
+    </body>
+</html>
